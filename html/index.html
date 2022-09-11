@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d5005c0a32.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&family=Prompt:wght@700&family=Rubik:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="contacts.html">Contacts</a>
+      </div>
+    </div>
+    <main>
+      <button id="random-button" type="button" onclick="getRandomUser()">
+        Get random user
+      </button>
+      <button id="get_users" type="button" onclick="getUsers()">
+        Get 3 users
+      </button>
+      <div id="persons"></div>
+    </main>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
