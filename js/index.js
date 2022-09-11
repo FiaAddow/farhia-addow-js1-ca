@@ -42,9 +42,8 @@ const getUsers = async () => {
 
     const persons = await response.json();
 
-    document.getElementById("persons").innerHTML = "";
-
-    persons.map((person, index) => {
+    
+    persons.forEach((person, index) => {
       if (index < 3) {
         const { id, name, phone, email } = person;
 
@@ -65,36 +64,5 @@ const getUsers = async () => {
   }
 };
 
-const dropdown = document.querySelectorAll('dropdown');
 
-dropdown.forEach(dropdown => {
-  const select = dropdown.queryselector('.select');
-  const caret = dropdown.queryselector('.caret');
-  const menu = dropdown.queryselector('.menu');
-  const options = dropdown.queryselector('.menu li');
-  const selected = dropdown.queryselector('.selected');
-  
-  select.addEventListener('click', () => {
-
-  select.classList.toggle('select-clicked');
-  caret.classList.toggle('caret-rotate');
-  menu.classList.toggle('menu-open');
- 
-});
-
-options.forEach(options => {
-  Option.addEventListener('click', () => {
-    selected.innertext = option.innertext;
-    select.classList.remove('select-clicked');
-    caret.classList.remove('caret-rotate');
-    menu.classList.remove('menu-open');
-
-  options.forEach(option => {
-    option.classList.remove('active');
-    });
-
-    option.classList.add('active');
-  });
-});
-});
 
