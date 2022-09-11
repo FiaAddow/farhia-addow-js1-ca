@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/style.css" rel="stylesheet" />
-    <title>Contacts</title>
-  </head>
-  <body>
-    <div class="dropdown">
-      <button class="dropbtn">Dropdown</button>
-      <div class="dropdown-content">
-        <a href="index.html">Home</a>
-        <a href="contacts.html">Contacts</a>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/style.css" rel="stylesheet" />
+  <title>Contacts</title>
+</head>
+
+<body>
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="contacts.html">Contacts</a>
     </div>
-    <main>
-      <div id="validation"></div>
-      <form id="form">
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" required /><br />
-        <label for="subject" minlength="10">Subject:</label><br />
-        <input type="text" id="subject" name="subject" /><br />
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" /><br />
-        <label for="address" minlength="25">Address:</label><br />
-        <input type="text" id="address" name="address" /><br />
-        <br />
-        <input type="submit" onclick="validateForm()" />
-      </form>
-      <script src="../js/contacts.js"></script>
-    </main>
-  </body>
+  </div>
+  <main>
+    <div id="validation"></div>
+    <form id="form">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+      <label for="subject" minlength="10">Subject:</label><br />
+      <input type="text" id="subject" name="subject" /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" /><br />
+      <label for="address" minlength="25">Address:</label><br />
+      <input type="text" id="address" name="address" /><br />
+      <br />
+      <input type="submit" onclick="validateForm()" />
+    </form>
+    <script src="../js/contacts.js"></script>
+  </main>
+</body>
+
 </html>
